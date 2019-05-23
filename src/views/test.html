@@ -1,0 +1,46 @@
+<head>
+	<title>CITIBIKER</title>
+	<link rel="stylesheet" href="../public/stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<meta charset="utf-8" /> 
+</head>
+<body>
+	<form action="/addride" method="POST" id="addRide">
+		<h1>ADD A RIDE</h1>
+		<input type="text" placeholder="STARTSTATION" name="startStation">
+		<input type="text" placeholder="ENDSTATION"  name="endStation">
+		<input type="number" placeholder="DURATION"  name="duration">
+		<button>SUBMIT</button>
+	</form >
+	<form action="/filterrides" method="GET" id="filterRides">
+		<h1>FILTERING</h1>
+		<input type="text" placeholder="STARTSTATION" name="ssFilter">
+		<input type="text" placeholder="ENDSTATION" name="esFilter">
+		<select name="durFilter">
+  			<option value="slow">SLOWEST-->FASTEST</option>
+  			<option value="fast">FASTEST-->SLOWEST</option>
+		</select>
+		<select name="ageFilter">
+  			<option value="lt21">YOUNGER THAN 21</option>
+  			<option value="gt21lt30">BETWEEN 21 AND 30</option>
+  			<option value="gt30lt45">BETWEEN 30 and 45</option>
+  			<option value="gt45">OLDER THAN 45</option>
+		</select>
+		<select name="genFilter">
+  			<option value="1">MALE</option>
+  			<option value="2">FEMALE</option>
+  			<option value="0">ALL</option>
+		</select>
+		<button>FILTER</button>
+	</form>
+	<div id="outputDiv">
+		<h1>ALL RIDES</h1>
+		{{#each results}}
+			<li>
+			<b>STARTSTATION:</b>&nbsp{{startStation}}&nbsp
+			<b>ENDSTATION:</b>&nbsp{{endStation}}&nbsp
+			<b>DURATION:</b>&nbsp{{duration}}
+			</li>
+		{{/each}}
+	</div>
+</body>
+ssFilter=&esFilter=&durFilter=slow&ageFilter=lt21&genFilter=male

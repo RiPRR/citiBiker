@@ -1,0 +1,72 @@
+<h1 id="title" class="noselect">{{username}}'S CITIBIKER</h1>
+<div id="nav">
+	<a href="/" class="not-active" id="homeNav"><h2 id="loginNav" class="navs hvr-pulse-shrink noselect">HOME</h2></a>
+	<h2 id="filterNav" class="navs hvr-pulse-shrink noselect">FIND</h2>
+	<h2 id="addNav" class="navs hvr-pulse-shrink noselect">ADD</h2>
+	<h2 id="setNav" class="navs hvr-pulse-shrink noselect">SET</h2>
+</div>
+<div id="setDiv">
+	<form action="/setPrefs" method="POST" id="setPrefs">
+		<h1>SET PREFRENCES</h1>
+		<input type="number" min="18" max="110" placeholder="AGE" name="userAge">
+		<select name="userGender">
+					<option value="male">MALE</option>
+					<option value="female">FEMALE</option>
+					<option value="other">OTHER</option>
+		</select>
+		<button>SUBMIT</button>
+	</form>
+</div>
+<div id="addDiv">
+	<form action="/addride" method="POST" id="addRide">
+		<h1>ADD A RIDE</h1>
+		<input type="text" placeholder="STARTSTATION" name="startStation">
+		<input type="text" placeholder="ENDSTATION"  name="endStation">
+		<input type="text" placeholder="DURATION(min:sec)"  name="duration">
+		<button>SUBMIT</button>
+	</form>
+</div>
+<div id="filterDiv">
+	<form action="/filterrides" method="GET" id="filterRides">
+		<h1 id="filtering">FILTERING</h1>
+		<input type="hidden" id="isUserSpecific" name="user" value="yes">
+		<div id="filterInput">
+			<div id="ftop">
+				<input type="text" placeholder="STARTSTATION" name="ssFilter">
+				<input type="text" placeholder="ENDSTATION" name="esFilter">
+				<select name="durFilter">
+					<option value="asc">FASTEST</option>
+					<option value="desc">SLOWEST</option>
+				</select>
+			</div>
+			<div id="fbot">
+				<input type="number" min="18" max="110" name="ageYoung" placeholder="min age">
+				<input type="number" min="18" max="110" name="ageOld" placeholder="max age">
+				<select name="genFilter">
+					<option value="">MALE & FEMALE</option>
+					<option value="male">MALE</option>
+					<option value="female">FEMALE</option>
+				</select>
+				<button>GO</button>
+			</div>
+		</div>
+	</form>
+</div>
+<div id="outputDiv">
+	<h1>YOUR RIDES</h1>
+	{{#each results}}
+		<div class="outputs">
+			<div id="rTime">
+				&nbsp{{durationF}}&nbsp
+			</div>
+			<div id="sNames">
+				&nbsp{{startStation}}&nbsp
+				<b>&nbspTO&nbsp</b>&nbsp{{endStation}}&nbsp
+			</div>
+			<div id="rMeta">
+				<b>AGE:</b>&nbsp{{age}}&nbsp
+				<b>GENDER:</b>&nbsp{{gender}}&nbsp
+			</div>
+		</div>
+	{{/each}}
+</div>

@@ -1,0 +1,169 @@
+#filterRides{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(98,121,184,0.3); 
+	width: 75%;
+	border-radius: 25px; 
+	border: dotted;
+}
+#access{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(98,121,184,0.3); 
+	width: 30%;
+	border-radius: 25px; 
+	border: dotted;
+	display: none;
+}
+#addRide,#setPrefs{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(98,121,184,0.3); 
+	width: 30%;
+	border-radius: 25px; 
+	border: dotted;
+	display: none;
+}
+#filterDiv,#loginDiv{
+	display: flex;
+	justify-content:   center;
+}
+#addDiv,#setDiv{
+	display: flex;
+	justify-content: center;
+}
+#filterInput{
+	display: flex;
+	flex-direction: column;
+	align-items:  center;
+	padding-bottom: 20px
+}
+#ftop,#fbot{
+	display: flex;
+	flex-direction: row;
+	height: 3.5%;
+	justify-content:center;
+}
+#outputDiv{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.outputs{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(98,121,184,0.3); 
+	width: 50%;
+	border-radius: 10px; 
+	border: dotted; 
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-size: 15pt;
+	margin-bottom: 10px;
+}
+#rMeta,#sNames{
+	display: flex;
+	flex-direction: row;
+}
+#sNames{
+	font-family: "bloomer";
+	font-size:20pt;
+}
+#rMeta{
+	font-family: "bloomer";
+	font-size:15pt;
+}
+#rTime{
+	font-size: 25pt;
+	font-family: "helvetica";
+	font-weight: bold;
+}
+#nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;	
+	padding-left: 10px
+}
+#regSwitch{
+	color: #9A879D;
+	padding:0px;
+	margin:10px;
+	font-size: 20pt;
+	cursor: pointer;
+}
+#accessText{
+	padding: 0px;
+	margin: 0px;
+	font-size: 32pt;
+}
+#loginText{
+	text-align: center;
+}
+#filtering{
+	padding-top: 0px;
+	margin-top: 0px;
+	font-size: 32pt;
+}
+#title{
+	font-size: 60pt;
+	text-align: center;
+	margin-bottom: 0px;
+}
+.navs{
+	padding: 30px;
+	padding-top: 0px;
+	font-size: 38px;
+	cursor: pointer;
+
+}
+body{
+	background-color: #49516F;
+}
+h1{
+	font-family: "bloomer";
+}
+h2{
+	font-family: "disko"
+}
+h3{
+	font-family: "bloomer"
+}
+b{
+	color: #9A879D;
+	font-family:"bloomer";
+}
+input,select{
+	background-color: #CFCFCD;
+	border: 1px solid;
+	color: grey;
+	text-align: center;
+	font-family: "helvetica"
+}
+input:focus{
+	outline: none;
+}
+@font-face{
+	font-family: "bloomer";
+	src:url(../fonts/Bloomer.otf) format("opentype");
+}
+@font-face{
+	font-family: "disko";
+	src:url(../fonts/Disko.ttf);
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+a {
+  text-decoration: none;
+}
+

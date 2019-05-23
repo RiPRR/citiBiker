@@ -52,41 +52,6 @@ Example Values:
 ```
 
 
-## [Link to Commented First Draft Schema](db.js) 
-
-Having trouble with this step emailed Prof my SRC. github wont let me upload
-
-## Wireframes
-
-/list/create - WIREFRAMES
-
-![WIREFRAMES](documentation/WIREFRAMES.pdf)
-
-## Site map
-
-![SITEMAP](documentation/MAP.pdf)
-
-## User Stories or Use Cases
-
-1. as non-registered user, I can register a new account with the site
-2. as a user, I login and upload my rides
-3. as a user, I can compare my rides to others in the system
-4. as a user, I can view all of my rides
-5. as a user, I can create a profile
-6. as a user, I can use filtering tools on my and other's rides
-
-## Research Topics
-
-* (2 points) Allow users to create account/upload rides
-* (4 points) Automated polling and collecting CitiBike data as it's uploaded by CitiBike
-* (2 points) Filtering tools for ridedata
-
-8 points total out of 8 required points
-
-
-## [Link to Initial Main Project File](app.js) 
-
-Having trouble with this step emailed Prof my SRC. github wont let me upload
 
 ## Annotations / References Used
 
